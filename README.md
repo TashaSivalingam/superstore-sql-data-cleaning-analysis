@@ -22,7 +22,7 @@ This project analyzes sales and product data from a hypothetical **Super Store**
 ### 1. Top 5 Products per Category by Sales
 **Business Question:** Find the top 5 products within each category based on the highest total sales. The output is sorted by category in ascending order and by sales in descending order within each category.
 
-**SQL Solution:**
+**SQL Solution Snippet:**
 ```sql
 -- Top 5 products from each category based on highest total sales--
 WITH top_product AS(
@@ -37,34 +37,19 @@ LEFT JOIN products
 	USING (product_id)
 GROUP BY category,product_name)
 
-SELECT category,product_name,product_total_sales, product_total_profit, product_rank
-FROM top_product
-WHERE product_rank BETWEEN 1 AND 5
-ORDER BY category, product_total_sales DESC;
-```
-<img width="962" height="286" alt="image" src="https://github.com/user-attachments/assets/c73c3819-5dee-4f4a-b51a-d5ec72a3ace5" />
+View the full analysis here (sql/01_Top_Product_Analysis)
 
+```
+**Output Preview:**
+<img width="962" height="286" alt="image" src="https://github.com/user-attachments/assets/c73c3819-5dee-4f4a-b51a-d5ec72a3ace5" />
 
 ---
 
 ### 2. Imputing Missing Quantities via Estimated Unit Price
 **Business Question:** Calculate missing values in the `quantity` column by determining the effective unit price for each `product_id` using available order data  and estimate the missing quantities under `calculated_quantity`.
 
-**SQL Solution:**
+**SQL Solution Snippet:**
 ```sql
---Quantity for orders with missing values in the quantity column: 
--- Impute_missing_values--
-SELECT product_id, quantity, sales
-FROM orders
-WHERE quantity IS NULL;
-
---To check unit price of missing products--
-SELECT product_id, quantity, sales
-FROM orders
-WHERE product_id IN ('TEC-STA-10003330','FUR-ADV-10000571','FUR-BO-10001337','TEC-STA-10004542','FUR-ADV-10004395')
-AND quantity IS NOT NULL
-	ORDER BY product_id,quantity, sales;
-
 
 --Use unit price to estimate the missing quantity values--
 SELECT product_id, discount, market,region, quantity, sales,
@@ -78,7 +63,9 @@ SELECT product_id, discount, market,region, quantity, sales,
 FROM orders
 	WHERE quantity IS NULL;
 
+View the full analysis here (sql/02_Impute_missing_values)
 ```
+**Output Preview:**
 <img width="957" height="172" alt="image" src="https://github.com/user-attachments/assets/7d627b43-278f-45d9-953d-a0dfa492acf4" />
 
 ---
