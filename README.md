@@ -78,9 +78,8 @@ SELECT product_id, discount, market,region, quantity, sales,
 FROM orders
 	WHERE quantity IS NULL;
 
-<img width="960" height="180" alt="image" src="https://github.com/user-attachments/assets/d37d1a2e-60b1-48f8-81d1-7b0fbab66a33" />
-
 ```
+<img width="957" height="172" alt="image" src="https://github.com/user-attachments/assets/7d627b43-278f-45d9-953d-a0dfa492acf4" />
 
 ---
 
