@@ -77,4 +77,5 @@ This project leverages SQL to transform raw transactional data into structured i
 
 ## Author
 Tasha Sivalingam
+
 Quality and Data Analyst
