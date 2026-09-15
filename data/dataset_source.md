@@ -10,11 +10,10 @@ https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting/data
 
 
 ## Repository Policy
-The dataset is not stored in this repository in order to:
+The dataset is intentionally excluded from this repo to keep it lightweight and ensure compliance with licensing terms.
 
-Keep the repository lightweight
-Respect dataset distribution and licensing policies
-To reproduce this project:
+Instructions to replicate:
 
-Download the dataset from the source above
-Place the dataset in the /data folder
+1. Obtain the dataset from the link above.
+
+2. Place the downloaded file inside the data/ folder.
