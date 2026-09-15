@@ -1,5 +1,3 @@
-# superstore-sql-data-cleaning-analysis
-DataCamp Portfolio Project: Intermediate SQL analysis on Super Store sales dataset using CTEs, window functions (ROW_NUMBER), and conditional logic (CASE WHEN) to impute missing inventory quantities and identify top-performing products by category.
 # Super Store SQL Data Cleaning & Product Performance Analysis
 
 ## Project Overview
@@ -73,3 +71,10 @@ View the full analysis here (sql/02_Impute_missing_values)
 ## 💡 Key Business Takeaways
 1. **Data Integrity Restored:** By leveraging historical `sales` data at the `product_id` level, missing order quantities were accurately backfilled without skewing overall inventory reports.
 2. **Category Performance:** Segmenting top products using `ROW_NUMBER()OVER(PARTITION BY)` highlighted key revenue drivers per category, allowing marketing teams to focus promotional budgets on high-margin inventory.
+
+## Project Outcome
+This project leverages SQL to transform raw transactional data into structured insights that fuel smarter business strategies.
+
+## Author
+Tasha Sivalingam
+Quality and Data Analyst
