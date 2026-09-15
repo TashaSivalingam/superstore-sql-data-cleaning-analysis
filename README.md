@@ -73,7 +73,8 @@ View the full analysis here (sql/02_Impute_missing_values)
 2. **Category Performance:** Segmenting top products using `ROW_NUMBER()OVER(PARTITION BY)` highlighted key revenue drivers per category, allowing marketing teams to focus promotional budgets on high-margin inventory.
 
 ## Project Outcome
-This project leverages SQL to transform raw transactional data into structured insights that fuel smarter business strategies.
+This project leverages SQL to transform raw transactional data into structured insights that fuel smarter business strategies;
+Leveraged PostgreSQL, CTEs, and window functions to clean incomplete sales records and evaluate product profitability across Super Store categories.
 
 ## Author
 Tasha Sivalingam
