@@ -1,19 +1,43 @@
 
 ## Dataset Description
-This transactional dataset tracks order, product, customer, and regional data, enabling multi-dimensional analysis of sales performance and trends.
+This transactional dataset tracks order, product, customer, and regional data, enabling multi-dimensional analysis of sales performance and trends. Project was executed in DataCamp and showcased here to build a repository of projects.
 
-Key columns include:
+Below is how the tables were structured:
 
-- Order ID
-- Order Date
-- Product ID
-- Product Name
-- Market
-- Region
-- Category
-- Sub-Category
-- Sales
-- Profit
+1) orders :
+   
+  Columns Include:    
+- row_id	      
+- order_id	
+- order_date	
+- market	
+- region	
+- product_id	
+- sales	
+- quantity	
+- discount	
+- profit	
+
+2) returned_orders:
+
+  Columns Include: 
+- returned	
+- order_id	
+- market	
+
+3) people:
+   
+  Columns Include: 
+- person	
+- region
+
+4) products:
+
+  Columns Include: 
+- product_id	
+- category	
+- sub_category	
+- product_name	
 
 ---
 
