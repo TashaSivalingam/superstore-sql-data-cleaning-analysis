@@ -8,7 +8,7 @@ SELECT
 	ROW_NUMBER()OVER(PARTITION BY category ORDER BY ROUND(SUM(sales)::NUMERIC,2) DESC) AS product_rank
 FROM orders
 LEFT JOIN products
-	USING (product_id)
+USING (product_id)
 GROUP BY category,product_name)
 
 SELECT category,product_name,product_total_sales, product_total_profit, product_rank
