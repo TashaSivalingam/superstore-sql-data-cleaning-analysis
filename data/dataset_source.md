@@ -2,7 +2,7 @@
 ## Dataset Description
 This transactional dataset tracks order, product, customer, and regional data, enabling multi-dimensional analysis of sales performance and trends. Project was executed in DataCamp and showcased here to build a repository of projects.
 
-Below is how the tables were structured:
+Below is how the tables were structured in DataCamp:
 
 1) orders :
    
@@ -51,6 +51,7 @@ You can download the dataset from the original source:
 
 https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting/data
 
+Project Source: https://projects.datacamp.com/projects/2610
 
 ---
 
