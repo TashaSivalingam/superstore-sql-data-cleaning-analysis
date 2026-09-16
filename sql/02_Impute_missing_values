@@ -13,11 +13,11 @@ ORDER BY product_id,quantity, sales;
 --Use unit price to estimate the missing quantity values--
 SELECT product_id, discount, market,region, quantity, sales,
 	   CASE 
-	       WHEN product_id= 'FUR-ADV-10000571' THEN sales/109.74
+	     WHEN product_id= 'FUR-ADV-10000571' THEN sales/109.74
          WHEN product_id= 'FUR-ADV-10004395' THEN sales/16.824
          WHEN product_id= 'FUR-BO-10001337' THEN sales/102.833
          WHEN product_id= 'TEC-STA-10003330' THEN sales/101.328
          WHEN product_id= 'TEC-STA-10004542' THEN sales/16.032
          END AS calculated_quantity
 FROM orders
-	WHERE quantity IS NULL;
+WHERE quantity IS NULL;
